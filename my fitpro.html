@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPro</title>
+    <style>
+        /* CSS styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-image: url('https://www.example.com/fitness-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #28a745;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonials {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .testimonials blockquote {
+            font-style: italic;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-left: 5px solid white;
+            max-width: 800px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .contact {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        .credits {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FitPro</h1>
+        <p>Your Ultimate Path to a Healthier Life</p>
+    </header>
+
+    <nav>
+        <a href="#workouts">Workouts</a>
+        <a href="#nutrition">Nutrition</a>
+        <a href="#tips">Fitness Tips</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="workouts">
+        <h2>Workouts</h2>
+        <p>Boost your fitness with these simple workout routines:</p>
+        <ul>
+            <li><strong>Push-ups:</strong> 3 sets of 15 reps</li>
+            <li><strong>Squats:</strong> 3 sets of 20 reps</li>
+            <li><strong>Planks:</strong> 3 sets of 1-minute holds</li>
+            <li><strong>Jumping Jacks:</strong> 3 sets of 30 reps</li>
+        </ul>
+    </section>
+
+    <section id="nutrition">
+        <h2>Nutrition</h2>
+        <p>Fuel your body the right way with these nutrition tips:</p>
+        <ul>
+            <li>Eat a balanced diet with plenty of vegetables, fruits, and lean protein.</li>
+            <li>Stay hydrated by drinking at least 8 glasses of water a day.</li>
+            <li>Avoid processed foods and sugary drinks.</li>
+            <li>Eat small, frequent meals to maintain energy levels.</li>
+        </ul>
+    </section>
+
+    <section id="tips">
+        <h2>Fitness Tips</h2>
+        <p>Stay on track with these motivational fitness tips:</p>
+        <ul>
+            <li>Set realistic goals and celebrate your progress.</li>
+            <li>Consistency is key—make fitness a habit.</li>
+            <li>Prioritize rest and recovery to avoid burnout.</li>
+            <li>Find a workout buddy to stay motivated.</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What People Are Saying</h2>
+        <blockquote>
+            "FitPro has transformed my workout routine. I feel healthier and more energized every day!"
+        </blockquote>
+        <blockquote>
+            "I love the easy-to-follow nutrition tips on FitPro. It's a great resource for anyone looking to improve their health."
+        </blockquote>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 FitPro | All Rights Reserved</p>
+        <div class="credits">
+            <p>Website created by Rahul Joshi and Devraj</p>
+        </div>
+    </footer>
+
+</body>
+</html>
